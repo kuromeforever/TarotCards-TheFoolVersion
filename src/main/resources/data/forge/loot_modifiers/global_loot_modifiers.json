@@ -1,6 +1,14 @@
 {
   "replace": false,
   "entries": [
-    "tarotcards:tarot_loot_modifier"
+    "tarotcards:the_tower_loot_modifier",
+    "tarotcards:the_death_loot_modifier",
+    "tarotcards:the_hierophant_loot_modifier",
+    "tarotcards:the_high_priestess_loot_modifier",
+    "tarotcards:the_star_loot_modifier",
+    "tarotcards:the_hangedman_loot_modifier",
+    "tarotcards:the_strength_loot_modifier",
+    "tarotcards:the_temperance_loot_modifier",
+    "tarotcards:the_world_loot_modifier"
   ]
 }
