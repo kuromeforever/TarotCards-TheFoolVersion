@@ -34,7 +34,8 @@ public class TheHermitTarot extends TarotItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-		tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_hermit_armorbonus.get()).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, world, tooltip, flag);
+        tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_hermit_armorbonus.get()).withStyle(ChatFormatting.BLUE));
 	}
 
 }

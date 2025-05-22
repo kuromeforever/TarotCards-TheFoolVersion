@@ -40,6 +40,7 @@ public class TheLoversTarot extends TarotItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
+        super.appendHoverText(stack, world, tooltip, flag);
         tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_lovers_regenamplifier.get() + 1).withStyle(ChatFormatting.BLUE));
     }
 

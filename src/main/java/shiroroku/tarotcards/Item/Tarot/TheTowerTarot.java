@@ -31,6 +31,7 @@ public class TheTowerTarot extends TarotItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
+        super.appendHoverText(stack, world, tooltip, flag);
         tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", String.valueOf(Configuration.the_tower_damagenegation.get() * 100)).withStyle(ChatFormatting.BLUE));
     }
 }

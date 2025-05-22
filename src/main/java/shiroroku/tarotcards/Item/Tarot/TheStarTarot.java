@@ -27,7 +27,8 @@ public class TheStarTarot extends TarotItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-		tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_star_reachboost.get() * 100).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, world, tooltip, flag);
+        tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_star_reachboost.get() * 100).withStyle(ChatFormatting.BLUE));
 	}
 
 }

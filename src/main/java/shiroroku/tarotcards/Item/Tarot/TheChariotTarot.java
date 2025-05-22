@@ -27,6 +27,7 @@ public class TheChariotTarot extends TarotItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-		tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_chariot_speedboost.get() * 100).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, world, tooltip, flag);
+        tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_chariot_speedboost.get() * 100).withStyle(ChatFormatting.BLUE));
 	}
 }

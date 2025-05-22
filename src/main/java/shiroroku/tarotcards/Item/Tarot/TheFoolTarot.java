@@ -28,6 +28,7 @@ public class TheFoolTarot extends TarotItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-		tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_fool_jumpboost.get() + 1).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, world, tooltip, flag);
+        tooltip.add(Component.translatable(this.getDescriptionId() + ".desc", Configuration.the_fool_jumpboost.get() + 1).withStyle(ChatFormatting.BLUE));
 	}
 }

@@ -25,9 +25,10 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Supplier;
 
 public abstract class TarotItem extends Item {
+    public static final Rarity MYTHIC = Rarity.create("tarot.rarity.mythic", ChatFormatting.RED);
 
     public TarotItem() {
-        super(new Properties().rarity(Rarity.UNCOMMON).stacksTo(1));
+        super(new Properties().rarity(MYTHIC).stacksTo(1));
     }
 
     @Override
@@ -138,7 +139,7 @@ public abstract class TarotItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.translatable(this.getDescriptionId() + ".desc").withStyle(ChatFormatting.BLUE));
+        tooltip.add(Component.translatable("ageofmythology.tarotcards.general.desc"));
     }
 
 }
